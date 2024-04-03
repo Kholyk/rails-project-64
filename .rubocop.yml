@@ -1,5 +1,8 @@
+require: rubocop-rails
+
 AllCops:
   TargetRubyVersion: 3.2.2
+  NewCops: enable
 
 Style/StringLiterals:
   Enabled: true
@@ -29,3 +32,6 @@ Style/IfUnlessModifier:
 
 Metrics/BlockLength:
   Max: 30
+
+Style/RedundantConstantBase:
+  Enabled: false
