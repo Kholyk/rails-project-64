@@ -56,6 +56,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri windows]
   # Use sqlite3 as the database for Active Record
   gem 'faker'
+  gem 'minitest-power_assert'
   gem 'rubocop-rails', require: false
   gem 'slim_lint'
   gem 'sqlite3', '~> 1.4'
