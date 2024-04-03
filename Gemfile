@@ -44,6 +44,7 @@ gem "bootsnap", require: false
 # Sentry sentry.io
 gem "sentry-ruby"
 gem "sentry-rails"
+gem 'slim-rails'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -53,6 +54,8 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
+  gem "slim_lint"
+  gem 'faker'
 end
 
 group :development do
