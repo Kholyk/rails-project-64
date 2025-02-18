@@ -10,7 +10,7 @@ AllCops:
     - "vendor/**/*"
     - "node_modules/**/*"
   NewCops: enable
-  TargetRailsVersion: 6
+  TargetRailsVersion: 7.2
   TargetRubyVersion: 3.2
 
 Layout/LineLength:
