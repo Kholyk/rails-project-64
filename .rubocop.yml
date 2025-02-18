@@ -1,37 +1,50 @@
-require: rubocop-rails
+require:
+  - rubocop-rails
 
 AllCops:
-  TargetRubyVersion: 3.2.2
+  DisplayCopNames: true
+  Exclude:
+    - "bin/**"
+    - "db/schema.rb"
+    - "db/migrate/**"
+    - "vendor/**/*"
+    - "node_modules/**/*"
   NewCops: enable
-
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: single_quotes
-
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
+  TargetRailsVersion: 6
+  TargetRubyVersion: 3.2
 
 Layout/LineLength:
-  Max: 200
+  Enabled: false
 
-Metrics/MethodLength:
-  Max: 15
+Metrics/AbcSize:
+  Enabled: false
 
-Style/Documentation:
+Metrics/BlockLength:
   Enabled: false
 
 Metrics/CyclomaticComplexity:
   Enabled: false
 
-Metrics/PerceivedComplexity:
-  Max: 9
-
-Style/IfUnlessModifier:
+Metrics/ClassLength:
   Enabled: false
 
-Metrics/BlockLength:
-  Max: 30
+Metrics/MethodLength:
+  Enabled: false
 
-Style/RedundantConstantBase:
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/IfUnlessModifier:
   Enabled: false
