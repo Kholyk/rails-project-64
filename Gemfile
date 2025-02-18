@@ -46,6 +46,9 @@ gem 'bootsnap', require: false
 # Sentry sentry.io
 gem 'sentry-rails'
 gem 'sentry-ruby'
+gem 'stackprof'
+
+# Slim template engine for rails
 gem 'slim-rails'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
