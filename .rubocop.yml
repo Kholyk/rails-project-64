@@ -2,6 +2,7 @@ require:
   - rubocop-rails
 
 AllCops:
+  SuggestExtensions: false
   DisplayCopNames: true
   Exclude:
     - "bin/**"
