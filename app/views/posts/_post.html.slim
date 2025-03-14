@@ -1,0 +1,9 @@
+.card.mb-4
+  .card-header
+    |> Category:
+    b
+      = post.category.name
+  .card-body
+    = link_to post do
+      h5.card-title = post.title
+    p.card-text = post.body

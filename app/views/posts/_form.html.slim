@@ -1,0 +1,7 @@
+== validation_errors_for post
+
+= simple_form_for post do |f|
+  = f.association :category
+  = f.input :title
+  = f.input :body, as: :text
+  = f.button :submit, class: 'btn btn-success'
