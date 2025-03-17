@@ -29,3 +29,11 @@
 
 en:
   hello: "Hello world"
+  category:
+    created: "Category successfully created"
+    updated: "Category successfully updated"
+    destroyed: "Category successfully destroyed"
+  post:
+    created: "Post successfully created"
+    updated: "Post successfully updated"
+    destroyed: "Post successfully destroyed"
