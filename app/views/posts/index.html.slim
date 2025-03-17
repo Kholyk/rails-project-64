@@ -4,5 +4,5 @@ h1 Posts
   - @posts.each do |post|
     == render post
 
-- if user_signed_in? 
-  = link_to "New post", new_post_path, class: 'btn btn-success my-4'
+- if user_signed_in?
+  = link_to 'New post', new_post_path, class: 'btn btn-success my-4'

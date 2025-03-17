@@ -11,9 +11,9 @@ header
             = link_to 'Home', :root, class: 'nav-link active'
           li.nav-item
             = link_to 'Home', :root, class: 'nav-link'
-          - if user_signed_in? 
+          - if user_signed_in?
             li.nav-item
-              = link_to "New post", new_post_path, class: 'btn btn-success'
+              = link_to 'New post', new_post_path, class: 'btn btn-success'
         li.nav-item
           button.btn.btn-primary type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
             = display_user_email
