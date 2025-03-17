@@ -2,12 +2,12 @@
 
 one:
   category: one
-  creator: one
+  creator: <%= ActiveRecord::FixtureSet.identify(:user_one) %>
   title: MyString
   body: MyText
 
 two:
   category: two
-  creator: two
+  creator: <%= ActiveRecord::FixtureSet.identify(:user_two) %>
   title: MyString
   body: MyText
