@@ -22,6 +22,9 @@ gem 'turbo-rails'
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
 
+# Ancestry gem hierarchy
+gem 'ancestry'
+
 # Simple form
 gem 'simple_form'
 

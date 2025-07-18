@@ -22,3 +22,10 @@ end
     cat.posts.create!(title: Faker::Creature::Animal.name, body: Faker::Lorem.paragraph(sentence_count: 7, supplemental: true, random_sentences_to_add: 4), creator: User.find(rand(1..3)))
   end
 end
+
+Post.find_each do |post|
+  post.comments.create!(content: Faker::Lorem.paragraph, post:, user: User.find(rand(1..3)), parent: nil)
+  with_comments = post.comments.create!(content: Faker::Lorem.paragraph, post:, user: User.find(rand(1..3)), parent: nil)
+  nested = post.comments.create!(content: Faker::Lorem.paragraph, post:, user: User.find(rand(1..3)), parent: with_comments)
+  post.comments.create!(content: Faker::Lorem.paragraph, post:, user: User.find(rand(1..3)), parent: nested)
+end
